@@ -10,7 +10,7 @@ all_images_in_folder = [i for i in filelist]   # Create list of all images in fo
 
 
 for img in all_images_in_folder:
-    im = Image.open(img).convert('L')         # Make monochrome image
+    im = Image.open(img).convert('L')         
     (width, height) = im.size
     greyscale_map = list(im.getdata())
     greyscale_map = numpy.array(greyscale_map)
