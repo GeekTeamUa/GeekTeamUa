@@ -3,7 +3,7 @@ import numpy
 import glob
 
 
-filelist = glob.glob("/home/dmytro/PycharmProjects/dataset/letters/А_1/*")      # listw didn't see A_1 folder, so i changed en. "A" to ukrainian "A".Lol.
+filelist = glob.glob("/home/dmytro/PycharmProjects/dataset/letters/А_1/*")      # filelist didn't see A_1 folder, so i changed en. "A" to ukrainian "A".Lol.
 
 
 all_images_in_folder = [i for i in filelist]   # Create list of all images in folder
