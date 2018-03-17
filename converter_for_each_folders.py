@@ -11,7 +11,7 @@ data_folders = glob.glob('/home/dmytro/PycharmProjects/dataset/letters/*')
 for folder in data_folders:
     all_images_in_folder = glob.glob('/home/dmytro/PycharmProjects/dataset/letters/'+str(os.path.basename(folder))+"/*")
     for img in all_images_in_folder:
-        im = Image.open(img).convert('L')  
+        im = Image.open(img).convert('L')  # Make monochrome image.I think that is spare step, but it isn't working withot this convert
         (width, height) = im.size
         greyscale_image = list(im.getdata())
         greyscale_image = numpy.array(greyscale_image)
