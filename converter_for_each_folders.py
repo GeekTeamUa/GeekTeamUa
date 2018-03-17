@@ -1,4 +1,4 @@
-# Before start deleted foder 'errors' in folder "Д_1"
+# Before start deleted folder 'errors' in folder "Д_1"
 
 from PIL import Image
 import numpy
