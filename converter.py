@@ -12,10 +12,10 @@ all_images_in_folder = [i for i in filelist]   # Create list of all images in fo
 for img in all_images_in_folder:
     im = Image.open(img).convert('L')         
     (width, height) = im.size
-    greyscale_map = list(im.getdata())
-    greyscale_map = numpy.array(greyscale_map)
-    greyscale_map = greyscale_map.reshape((height, width))
+    greyscale_image = list(im.getdata())
+    greyscale_image = numpy.array(greyscale_image)
+    greyscale_image = greyscale_image.reshape((height, width))
 
-numpy.save("array_of_A1", greyscale_map)
+numpy.save("array_of_A1", greyscale_image)
 
-print(greyscale_map)
+print(greyscale_image)
