@@ -24,15 +24,3 @@ for target in range(len(list_of_folders)):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
