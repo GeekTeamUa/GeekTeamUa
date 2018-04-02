@@ -2,18 +2,19 @@
 
 from PIL import Image
 import numpy
+import json
 import glob
 import os
 
-save_path = '/home/dmytro/PycharmProjects/script_convert_jpg_to_numpy/npy_data'
+data = json.load(open("config.json"))
 
-data_folders = glob.glob('/home/dmytro/PycharmProjects/dataset/letters/*')
+data_folders = glob.glob(data["dataset"][0]+'*')
 
 
 for folder in data_folders:
-    all_images_in_folder = glob.glob('/home/dmytro/PycharmProjects/dataset/letters/'+str(os.path.basename(folder))+"/*")
+    all_images_in_folder = glob.glob(data["dataset"][0]+str(os.path.basename(folder))+"/*")
     for img in all_images_in_folder:
-        im = Image.open(img).convert('L')  # Make monochrome image.I think that is spare step, but it isn't working without this convert
+        im = Image.open(img).convert('L')
         (width, height) = im.size
         greyscale_image = list(im.getdata())
         greyscale_image = numpy.array(greyscale_image)
