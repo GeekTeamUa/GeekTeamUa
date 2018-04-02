@@ -8,11 +8,11 @@ import os
 
 data = json.load(open("config.json"))
 
-data_folders = glob.glob(data["dataset"][0]+'*')
+data_folders = glob.glob(data["dataset"][0]+'*')       # list of path of folders (ex. /home/.../letters/A_1)
 
 
 for folder in data_folders:
-    all_images_in_folder = glob.glob(data["dataset"][0]+str(os.path.basename(folder))+"/*")
+    all_images_in_folder = glob.glob(data["dataset"][0]+str(os.path.basename(folder))+"/*")   # Path to images in each folder
     for img in all_images_in_folder:
         im = Image.open(img).convert('L')
         (width, height) = im.size
