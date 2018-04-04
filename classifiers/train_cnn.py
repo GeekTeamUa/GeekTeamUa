@@ -27,11 +27,11 @@ y = numpy.asarray([img[2] for img in dataset])
 
 x_train, x_test, y_train, y_test = train_test_split(X, y)   # Divide our data on train and test samples
 
-
+# print train and test shapes
 # print("x_train:", x_train.shape, "\nx_test:", x_test.shape, "\ny_test:", y_test.shape)
 
 batch_size = 128
-num_classes = 72
+num_classes = 72    # Write number of classes 72
 epochs = 12
 
 # input image dimensions
