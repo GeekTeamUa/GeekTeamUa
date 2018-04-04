@@ -20,7 +20,7 @@ data = json.load(open("config.json"))
 if os.path.isfile(data["features_path"]+"/.npy"):           # Check if we already have numpy with our data
     dataset = numpy.load(data["features_path"] + "/.npy")
 else:
-    dataset = read_data()
+    dataset = read_data()   # Create and read numpy data (see data_reader.py)
 
 X = numpy.asarray([img[0] for img in dataset])
 y = numpy.asarray([img[2] for img in dataset])
