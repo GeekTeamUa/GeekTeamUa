@@ -13,13 +13,13 @@ def read_data():
     dataset = []
 
     for target in range(len(list_of_folders)):
-        for path_to_img in glob.glob(list_of_folders[target]+"/*"):     #
+        for path_to_img in glob.glob(list_of_folders[target]+"/*"):
             im = Image.open(path_to_img).convert('L')
             (width, height) = im.size
             greyscale_image = list(im.getdata())
             greyscale_image = numpy.array(greyscale_image)
             greyscale_image = greyscale_image.reshape((height, width))
-            dataset.append((greyscale_image, path_to_img, target))
+            dataset.append((greyscale_image, path_to_img, target))   # Add tuple with( arr_img, path/to/img, targe(0-71)
         target += 1
 
     numpy.save(data["features_path"], dataset)
