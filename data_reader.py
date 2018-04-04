@@ -22,10 +22,11 @@ def read_data():
             dataset.append((greyscale_image, path_to_img, target))
         target += 1
 
+    numpy.save(data["features_path"], dataset)
+
     return dataset
 
 
 
-    # numpy.save(data["features_path"], dataset)
 
 
