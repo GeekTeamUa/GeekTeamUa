@@ -1,3 +1,8 @@
+"""
+UA-mnist train CNN. Test accuracy: 0.78
+
+"""
+
 from __future__ import print_function
 import keras
 from keras.models import Sequential
