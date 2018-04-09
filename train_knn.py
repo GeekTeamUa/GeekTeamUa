@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 
 
 
-read_data()
+
 data = json.load(open("config.json"))
 
 if os.path.isfile(data["features_path"]+"/.npy"):           # Check if we already have numpy with our data
@@ -24,8 +24,8 @@ y = numpy.asarray([img[2] for img in dataset])
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
 input_dim = 945 #27*35
-X_train = X_train.reshape(1000, input_dim)
-X_test = X_test.reshape(100, input_dim)
+X_train = X_train.reshape(60000, input_dim)
+X_test = X_test.reshape(10000, input_dim)
 X_train = X_train.astype('float32')
 X_test = X_test.astype('float32')
 X_train /= 255
