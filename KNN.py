@@ -1,12 +1,12 @@
 from __future__ import print_function
 import glob
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
 import json
 from sklearn.metrics import accuracy_score
 import os.path
 from sklearn.model_selection import train_test_split
-import numpy as np
-from keras import backend as K
+import numpy
+
 from data_reader import read_data
 
 
@@ -43,27 +43,32 @@ from keras.utils import np_utils
 y_train = np_utils.to_categorical(y_train, 72)
 y_test = np_utils.to_categorical(y_test, 72)
 
-n_train = X_train.shape[0]
-
-X_train = X_train[1:np.round(n_train*0.1),: ]
-
-model = KNeighborsClassifier(n_neighbors=3, leaf_size=3)
 
 
 
+model= RandomForestClassifier(n_estimators=10)
+
+
+
+print ('1')
 XX = X_train
+print ('2')
 yy = y_train
+print ('y')
 model.fit(XX, yy)
+print ('3')
 train_outputs = model.predict(XX)
+print ('4')
 test_outputs = model.predict(X_test)
+print ('5')
 train_score_summary = accuracy_score(yy, train_outputs)
+print ('6')
 test_score_summary = accuracy_score(y_test, test_outputs)
+print ('7')
 
 
 
-
-
-print('Test loss:', train_score_summary)
+print('Train accuracy:', train_score_summary)
 print('Test accuracy:', test_score_summary)
 
 
