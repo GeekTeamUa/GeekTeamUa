@@ -50,21 +50,15 @@ model= RandomForestClassifier(n_estimators=10)
 
 
 
-print ('1')
+
 XX = X_train
-print ('2')
 yy = y_train
-print ('y')
 model.fit(XX, yy)
-print ('3')
 train_outputs = model.predict(XX)
-print ('4')
 test_outputs = model.predict(X_test)
-print ('5')
 train_score_summary = accuracy_score(yy, train_outputs)
-print ('6')
 test_score_summary = accuracy_score(y_test, test_outputs)
-print ('7')
+
 
 
 
