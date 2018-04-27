@@ -1,0 +1,50 @@
+/* line 1, style.less */
+.center {
+  text-align: center;
+}
+/* line 4, style.less */
+header {
+  background-color: #a7a7a7;
+}
+/* line 9, style.less */
+header .container h1 {
+  color: whitesmoke;
+  padding-top: 1em;
+}
+/* line 13, style.less */
+header .container h3 {
+  color: whitesmoke;
+  line-height: 2em;
+}
+/* line 17, style.less */
+header .container p {
+  margin-bottom: 3em;
+  line-height: 3em;
+}
+/* line 22, style.less */
+header ul {
+  padding-top: 2em;
+}
+/* line 24, style.less */
+header ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  width: 24%;
+}
+/* line 33, style.less */
+.line {
+  height: 1px;
+  background-color: black;
+}
+/* line 38, style.less */
+section.try {
+  margin-top: 4em;
+}
+@media (max-width: 650px) {
+  /* line 53, style.less */
+  header ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
