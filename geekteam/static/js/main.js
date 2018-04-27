@@ -87,8 +87,6 @@ $('a[href*="#"]')
 
 
 
-
-
 // Scroll to specific values
 // scrollTo is the same
 window.scroll({
