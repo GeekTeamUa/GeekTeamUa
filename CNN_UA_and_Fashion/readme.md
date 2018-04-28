@@ -1,1 +1,1 @@
-Link to dataset: https://www.kaggle.com/zalando-research/fashionmnist/downloads/fashionmnist.zip/4
+Link to dataset: https://github.com/zalandoresearch/fashion-mnist
