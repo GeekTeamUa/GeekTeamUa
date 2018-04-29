@@ -27,5 +27,12 @@ def upload_file():
     return render_template("index.html", final_text = "test")
 
 
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+
+
