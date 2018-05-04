@@ -18,13 +18,18 @@ def result():
     final_text = request.form["letter"]
     return render_template("index.html", final_text=final_text)
 
-@app.route('/upload', methods=['POST'])
+@app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
+#    select = request.form.get("select");
     file = request.files['image']
     f = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
 
     file.save(f)
-    return render_template("index.html", final_text = "test")
+ #   return render_template("index.html", final_text = "test")
+    if select == 1:
+        return render_template("index.html", final_text = "test1")
+    if select == 2 :
+        return render_template("index.html", final_text = "test2")
 
 
 

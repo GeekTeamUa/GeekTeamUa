@@ -57,8 +57,13 @@
         </div>
         <div class="row">
             <div class="one-third column">
-                <form action="/result" method="post" enctype="multipart/form-data">
+                <form action="/upload" method="post" enctype="multipart/form-data">
                     <input type='file' id="imgInp"  name="img"/>
+                        <select name="select" id="">
+                            <option value="1">MNIST</option>
+                            <option value="2">UAMIST</option>
+                            <option value="3">fashion mnist</option>
+                        </select>
                     <input type="submit" class="button button-primary u-full-width" value="submit">
                     <!--<input type="submit" value="A" name="letter"/>-->
                     <!--<input type="submit" value="B" name="letter"/>-->
@@ -76,7 +81,7 @@
             </div>
             <div class="one-third column">
                 <h1>
-                    Ви ввели: {{img}}
+                    Ви ввели: {{final_text}}
                 </h1>
             </div>
         </div>

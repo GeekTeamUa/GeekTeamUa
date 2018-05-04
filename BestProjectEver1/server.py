@@ -17,6 +17,7 @@ def home():
 
 @app.route('/result', methods=['GET', 'POST'])
 def result():
+    select = request.form.get("select");
     # Saving image into the picture directory
     img = request.files["img"]
     file = os.path.join(app.config['UPLOAD_FOLDER'], img.filename)
