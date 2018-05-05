@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../../Downloads/BestProjectEver1/static/css/normalize.css">
+    <link rel="stylesheet" href="../../../../Downloads/BestProjectEver1/static/css/skeleton.css">
+    <link rel="stylesheet" href="../../../../Downloads/BestProjectEver1/static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1 class="center">
+
+        </h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <h1 class="center">
+            GeekTeam
+        </h1>
+    </div>
+    <div class="row">
+        <h3 class="center">
+            Розпізнавання рукописних українських букв.
+        </h3>
+        <h3 class="center">
+            Cпробуй!
+        </h3>
+    </div>
+    <div class="row">
+        <div class="one-third column">
+            <form action="/result" method="post" enctype="multipart/form-data">
+                <input type='file' id="imgInp"  name="img"/>
+                <input type="submit" class="button button-primary u-full-width" value="Submit">
+            </form>
+        </div>
+        <div class="one-third column">
+            <img id="blah" src="#" style="width: 80%; height: auto; margin-left: auto; margin-right: auto" />
+        </div>
+        <div class="one-third column">
+            <h1>
+                Ви ввели: {{img}}
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <ul >
+            <li>
+                Хто Ви такі?
+                <ul>
+                    <li>
+                        Ми є групою студентів з Львівського Національного Університету Франка, факультету Електроніки.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Хто саме входить у Вашу команду?
+                <ul>
+                    <li>Дмитро Каїнський</li>
+                    <li>Валентин Гайтан</li>
+                    <li>Віктор Вдовиченко</li>
+                    <li>Олександр Мацевко</li>
+                    <li>Василь-Тарас Лучка</li>
+                </ul>
+            </li>
+            <li>
+                Що ви робите?
+                <ul>
+                    <li>
+                        Ми пробуємо навчити комп`ютер розпізнавати написані від руки українські букви.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Чому? Навіщо?
+                <ul>
+                    <li>
+                        Розпізнавання рукописного тексту є актуальною проблемою на сьогодні, особливо для нашої мови. Це дасть змогу оптимізувати велику кількість процесів таких як автоматичне зчиування введених у анкети данних, перетворення рукописного тексту у друкований.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Чи є у вас плани на майбутнє?
+                <ul>
+                    <li>
+                        Так. Звісно вони є. Нашою метою є навчити компютер розпізнавати не лише поодинокі букви, а й цілі слова, а у далекій перспективі перетворювати цілі сторіки рукописного  тексту у друкований.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+<script src="../../../../Downloads/BestProjectEver1/static/js/main.js"></script>
+</body>
+</html>
