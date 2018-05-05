@@ -20,16 +20,18 @@ def result():
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
-#    select = request.form.get("select");
-    file = request.files['image']
+    select = request.form.get("letter");
+    file = request.files['img']
     f = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
 
     file.save(f)
  #   return render_template("index.html", final_text = "test")
-    if select == 1:
+    if (select == "1"):
         return render_template("index.html", final_text = "test1")
-    if select == 2 :
+    if (select == "2") :
         return render_template("index.html", final_text = "test2")
+    if (select == "3") :
+        return render_template("index.html", final_text = "test3")
 
 
 
