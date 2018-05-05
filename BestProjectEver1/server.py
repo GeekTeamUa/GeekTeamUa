@@ -7,7 +7,7 @@ import os
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = os.path.basename('../pictures')
+UPLOAD_FOLDER = os.path.basename('uploads')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
@@ -17,9 +17,11 @@ def home():
 
 @app.route('/result', methods=['GET', 'POST'])
 def result():
-    select = request.form.get("select");
+    select = request.form.get("letter");
+
     # Saving image into the picture directory
-    img = request.files["img"]
+
+    img = request.files['img']
     file = os.path.join(app.config['UPLOAD_FOLDER'], img.filename)
     img.save(file)
 
@@ -51,7 +53,13 @@ def result():
     res_str=np.array_str(res)
     res_str=res_str.replace("[","")
     res_str = res_str.replace("]", "")
-    return render_template("index.html",img=res_str)
+#    return render_template("index.html",img=res_str)
+    if (select == "1"):
+        return render_template("index.html", final_text = "test1",img=res_str)
+    if (select == "2") :
+        return render_template("index.html", final_text = "test2",img=res_str)
+    if (select == "3") :
+        return render_template("index.html", final_text = "test3",img=res_str)
 
 
 # @app.route('/upload', methods=['POST'])
