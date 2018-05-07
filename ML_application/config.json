@@ -1,0 +1,6 @@
+{
+  "UAMnist_dataset": ["/home/dmytro/PycharmProjects/dataset/letters/"],
+  "Mnist_dataset": "/home/dmytro/PycharmProjects/CNN_UA_and_Fashion/mnist",
+  "features_path": "/home/dmytro/PycharmProjects/dataset/"
+}
+
