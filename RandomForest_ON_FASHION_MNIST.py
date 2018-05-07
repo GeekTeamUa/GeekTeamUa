@@ -11,7 +11,7 @@ import pandas as pd
 
 
 
-input_dim = 945 #27*35
+input_dim = 784 #27*35
 
 train_df = pd.read_csv(r'C:Users/Valik/Downloads/fashionmnist/fashion-mnist_train.csv')
 test_df = pd.read_csv(r'C:Users/Valik/Downloads/fashionmnist/fashion-mnist_test.csv')
