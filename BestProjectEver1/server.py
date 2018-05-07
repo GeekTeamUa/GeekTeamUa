@@ -189,5 +189,33 @@ def result():
 #     return render_template("index.html", final_text="test")
 
 
+
+
+@app.route('/trainm', methods=['GET', 'POST'])
+def train():
+
+    selectValue1 = request.form.get("pr")
+    selectValue2 = request.form.get("parametr2")
+
+    inputRange1 = int(request.form.get("value"))
+    inputRange2 = int(request.form.get("value2"))
+
+    # if(selectValue1 == "2"):
+    #     return render_template("training.html", how = "128")
+    return render_template("training.html", how = inputRange1*inputRange2)
+
+@app.route('/menux', methods=['GET', 'POST'])
+def menux():
+    submit = request.form.get("menux");
+    if(submit == "1"):
+        return render_template("index.html")
+    if(submit == "2"):
+        return render_template("training.html")
+    if(submit == "3"):
+        return render_template("aboutUs.html")
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)

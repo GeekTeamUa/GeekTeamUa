@@ -106,3 +106,15 @@ window.scrollBy({
 document.querySelector('.hello').scrollIntoView({
     behavior: 'smooth'
 });
+
+
+function fun1() {
+    var rng=document.getElementById('input_range_1'); //rng - это Input
+    var p=document.getElementById('range1'); // p - абзац
+    p.innerHTML=rng.value;
+}
+function fun2() {
+    var rng=document.getElementById('input_range_2'); //rng - это Input
+    var p=document.getElementById('range2'); // p - абзац
+    p.innerHTML=rng.value;
+}
