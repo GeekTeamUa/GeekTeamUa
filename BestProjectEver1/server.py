@@ -212,6 +212,8 @@ def menux():
     if(submit == "2"):
         return render_template("training.html")
     if(submit == "3"):
+        return render_template("how.html")
+    if(submit == "4"):
         return render_template("aboutUs.html")
 
 
