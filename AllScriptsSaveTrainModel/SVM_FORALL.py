@@ -2,7 +2,7 @@ def SCRIPT_SVM(x_train, y_train, x_test, y_test, input_dim):
 
     from sklearn.svm import LinearSVC
     from sklearn.metrics import accuracy_score
-
+    import pickle
 
     x_train = x_train.astype('float32')
     x_test = x_test.astype('float32')

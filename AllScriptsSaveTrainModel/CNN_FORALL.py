@@ -4,7 +4,7 @@ def SCRIPT_CONV_NEURAL_NETWORK(x_train, y_train, x_test, y_test, img_rows, img_c
     from keras.layers import Dense, Dropout, Flatten
     from keras.layers import Conv2D, MaxPooling2D
     from keras import backend as K
-
+    from keras.models import model_from_json
 
 
 
