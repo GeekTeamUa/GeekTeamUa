@@ -89,7 +89,147 @@ def result():
         res_str=res_str.replace("[","")
         res_str = res_str.replace("]", "")
         K.clear_session()
-        return render_template("index.html", final_text = "ua-mnist",img=res_str)
+        # return render_template("index.html", final_text = "ua-mnist",img=res_str)
+        if (res_str == "1"):
+            return render_template("index.html", final_text = "ua-mnist",img="1")
+        if (res_str == "2"):
+            return render_template("index.html", final_text = "ua-mnist",img="2")
+        if (res_str == "3"):
+            return render_template("index.html", final_text = "ua-mnist",img="3")
+        if (res_str == "4"):
+            return render_template("index.html", final_text = "ua-mnist",img="4")
+        if (res_str == "5"):
+            return render_template("index.html", final_text = "ua-mnist",img="5")
+        if (res_str == "6"):
+            return render_template("index.html", final_text = "ua-mnist",img="6")
+        if (res_str == "7"):
+            return render_template("index.html", final_text = "ua-mnist",img="7")
+        if (res_str == "8"):
+            return render_template("index.html", final_text = "ua-mnist",img="8")
+        if (res_str == "9"):
+            return render_template("index.html", final_text = "ua-mnist",img="9")
+        if (res_str == "10"):
+            return render_template("index.html", final_text = "ua-mnist",img="10")
+        if (res_str == "11"):
+            return render_template("index.html", final_text = "ua-mnist",img="11")
+        if (res_str == "12"):
+            return render_template("index.html", final_text = "ua-mnist",img="12")
+        if (res_str == "13"):
+            return render_template("index.html", final_text = "ua-mnist",img="13")
+        if (res_str == "14"):
+            return render_template("index.html", final_text = "ua-mnist",img="14")
+        if (res_str == "15"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "16"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "17"):
+            return render_template("index.html", final_text = "ua-mnist",img="10")
+        if (res_str == "18"):
+            return render_template("index.html", final_text = "ua-mnist",img="11")
+        if (res_str == "19"):
+            return render_template("index.html", final_text = "ua-mnist",img="12")
+        if (res_str == "20"):
+            return render_template("index.html", final_text = "ua-mnist",img="13")
+        if (res_str == "21"):
+            return render_template("index.html", final_text = "ua-mnist",img="14")
+        if (res_str == "22"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "23"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "24"):
+            return render_template("index.html", final_text = "ua-mnist",img="13")
+        if (res_str == "25"):
+            return render_template("index.html", final_text = "ua-mnist",img="14")
+        if (res_str == "26"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "27"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "28"):
+            return render_template("index.html", final_text = "ua-mnist",img="13")
+        if (res_str == "29"):
+            return render_template("index.html", final_text = "ua-mnist",img="14")
+        if (res_str == "30"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "31"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "32"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "33"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "34"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "35"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "36"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "37"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "38"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "39"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "40"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "41"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "42"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "43"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "44"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "45"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "46"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "47"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "48"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "49"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "50"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "51"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "52"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "53"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "54"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "55"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "56"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "57"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "58"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "59"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "60"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "61"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "62"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "63"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "64"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "65"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "66"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "67"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+        if (res_str == "68"):
+            return render_template("index.html", final_text = "ua-mnist",img="15")
+        if (res_str == "69"):
+            return render_template("index.html", final_text = "ua-mnist",img="16")
+
+
 
 
     if (select == "3") :
